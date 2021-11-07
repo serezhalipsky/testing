@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/css.css">
+	<link rel="stylesheet" href="/css/UserForm.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<header class="title-logo">
+		<div class="container">
+			<div class="logo">
+				<img width="50px" src="/img/log2.png" alt="Logo">
+				<h1 class="logo-name">Med<span>Inc</span></h1>
+			</div>
+			<div class="login">
+				<button class="log-in colorbtnlog">Login</button>
+				<button class="output colorbtnlog show">Output</button>
+			</div>
+		</div>
+	</header>
+	<section class="user-form">
+		<div class="user-form_modal container">
+			<template id="modal-template">
+				<div class="user-modal active">
+					<div class="user-modal-overlay">
+						<form class="user-modal_form">
+							<div class="user-modal_header">
+								<h2 class="modal-name"></h2>
+								<img width="12px" height="12px" class="modal-close" src="./img/close.png" alt="close">
+							</div>
+							<div class="user-modal_input">
+								<input class="modal-input-style email" type="email" placeholder="Email" name="email">
+								<input class="modal-input-style password" type="password" placeholder="Password"
+									name="password">
+							</div>
+							<div class="user-modal_btn">
+								<input type="button" value="Log in" class="modal-confm">
+							</div>
+						</form>
+					</div>
+				</div>
+			</template>
+		</div>
+	</section>
+	<main class="menu-forms">
+		<div class="container">
+			<div class="card-filter show">
+				<form class="card-filter_form" action="">
+					<input type="text" placeholder="Search">
+					<select name="priority" id="">
+						<option value="All">All</option>
+						<option value="High">High</option>
+						<option value="Normal">Normal</option>
+						<option value="Low">Low</option>
+					</select>
+					<button class="">Search</button>
+				</form>
+			</div>
+		</div>
+	</main>
+	<script type="module" src="./modules/index.js"></script>
+	<!-- <script src="./modules/modalUser.js"></script>
+	<script src="./modules/Constans.js"></script>
+	<script src="./modules/api.js"></script> -->
+</body>
+
+</html>
